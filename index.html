@@ -1,57 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="app.css">
-<title>Document</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="rail-track-hero.css">
+  <link rel="stylesheet" href="theme-toggle.css">
+
+  <title>RailTrack</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-railtrack sticky-top py-2">
-  <div class="container-fluid px-3 px-lg-4">
 
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-      <i class="bi bi-train-front fs-4"></i>
-      <span class="fw-bold fs-5">RailTrack</span>
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-railtrack sticky-top py-2">
+    <div class="container-fluid px-3 px-lg-4">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#railtrackNavbar" aria-controls="railtrackNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list fs-2 navbar-toggler-icon-custom"></i>
-    </button>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-train-front fs-4"></i>
+        <span class="fw-bold fs-5">RailTrack</span>
+      </a>
 
-    <div class="collapse navbar-collapse" id="railtrackNavbar">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2 text-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Track Train</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Train Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Routes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Favourites</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-
-      <button id="themeToggleBtn" class="d-flex align-items-center gap-2 mx-auto mx-lg-0" type="button" aria-label="Toggle dark/light mode">
-        <i class="bi bi-moon-stars"></i>
-        <span class="d-lg-none">Toggle Theme</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#railtrackNavbar"
+        aria-controls="railtrackNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list fs-2 navbar-toggler-icon-custom"></i>
       </button>
-    </div>
 
-  </div>
-</nav>
-    <script src="app.js"></script>
+      <div class="collapse navbar-collapse" id="railtrackNavbar">
+
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Track Train</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Train Schedule</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Routes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favourites</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+
+        <button
+          id="themeToggleBtn"
+          class="d-flex align-items-center gap-2 mx-auto mx-lg-0"
+          type="button"
+          aria-label="Toggle dark/light mode"
+        >
+          <i class="bi bi-moon-stars"></i>
+          <span class="d-lg-none">Toggle Theme</span>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero-section">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+
+      <h1 class="hero-heading">
+        <i class="fa-solid fa-train"></i>
+        Track Your Train in Real Time
+      </h1>
+
+      <p class="hero-subheading">
+        Check train locations, schedules, routes, fares, and arrival
+        times across Pakistan.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a href="#" class="btn-hero btn-hero-primary">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          Track a Train
+        </a>
+
+        <a href="#" class="btn-hero btn-hero-secondary">
+          <i class="fa-solid fa-calendar-days"></i>
+          View Schedule
+        </a>
+
+        <a href="#" class="btn-hero btn-hero-secondary">
+          <i class="fa-solid fa-ticket"></i>
+          Check Fare
+        </a>
+
+      </div>
+
+
+      <div class="search-box">
+
+        <div class="search-field">
+
+          <label for="trainName">
+            <i class="fa-solid fa-train-subway"></i>
+            Train Name
+          </label>
+
+          <select id="trainName" class="search-input">
+            <option value="" selected disabled>Select train</option>
+            <option>Tezgam Express</option>
+            <option>Green Line Express</option>
+            <option>Khyber Mail</option>
+            <option>Karachi Express</option>
+            <option>Jaffar Express</option>
+            <option>Pakistan Express</option>
+            <option>Pak Business Express</option>
+            <option>Shalimar Express</option>
+            <option>Karakoram Express</option>
+            <option>Allama Iqbal Express</option>
+            <option>Awam Express</option>
+            <option>Millat Express</option>
+            <option>Hazara Express</option>
+            <option>Fareed Express</option>
+            <option>Rehman Baba Express</option>
+            <option>Sir Syed Express</option>
+            <option>Shah Hussain Express</option>
+            <option>Sukkur Express</option>
+            <option>Bahauddin Zakaria Express</option>
+            <option>Khushhal Khan Khattak Express</option>
+            <option>Mehr Express</option>
+          </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+          <label for="fromStation">
+            <i class="fa-solid fa-location-dot"></i>
+            Departure Station
+          </label>
+
+          <select id="fromStation" class="search-input">
+            <option value="" selected disabled>Select station</option>
+            <option>Karachi Cantt</option>
+            <option>Karachi City</option>
+            <option>Drigh Road</option>
+            <option>Landhi Junction</option>
+            <option>Hyderabad Junction</option>
+            <option>Kotri Junction</option>
+            <option>Tando Adam Junction</option>
+            <option>Shahdadpur</option>
+            <option>Nawabshah</option>
+            <option>Mehrabpur</option>
+            <option>Rohri Junction</option>
+            <option>Sukkur</option>
+            <option>Khairpur</option>
+            <option>Ghotki</option>
+            <option>Sadiqabad</option>
+            <option>Rahim Yar Khan</option>
+            <option>Bahawalpur</option>
+            <option>Multan Cantt</option>
+            <option>Khanewal Junction</option>
+            <option>Sahiwal</option>
+            <option>Okara</option>
+            <option>Raiwind Junction</option>
+            <option>Lahore Junction</option>
+            <option>Lahore Cantt</option>
+            <option>Gujranwala</option>
+            <option>Wazirabad Junction</option>
+            <option>Gujrat</option>
+            <option>Lala Musa Junction</option>
+            <option>Jhelum</option>
+            <option>Rawalpindi</option>
+            <option>Islamabad</option>
+            <option>Taxila Cantt</option>
+            <option>Attock City</option>
+            <option>Peshawar Cantt</option>
+            <option>Quetta</option>
+            <option>Sibi Junction</option>
+            <option>Jacobabad Junction</option>
+            <option>Shikarpur</option>
+            <option>Dadu</option>
+            <option>Faisalabad</option>
+            <option>Sargodha Junction</option>
+            <option>Jhang Sadar</option>
+            <option>Bahawalnagar</option>
+            <option>Narowal Junction</option>
+            <option>Sialkot Junction</option>
+            <option>Havelian</option>
+          </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+          <label for="toStation">
+            <i class="fa-solid fa-location-dot"></i>
+            Arrival Station
+          </label>
+
+          <select id="toStation" class="search-input">
+            <option value="" selected disabled>Select station</option>
+            <option>Karachi Cantt</option>
+            <option>Karachi City</option>
+            <option>Drigh Road</option>
+            <option>Landhi Junction</option>
+            <option>Hyderabad Junction</option>
+            <option>Kotri Junction</option>
+            <option>Tando Adam Junction</option>
+            <option>Shahdadpur</option>
+            <option>Nawabshah</option>
+            <option>Mehrabpur</option>
+            <option>Rohri Junction</option>
+            <option>Sukkur</option>
+            <option>Khairpur</option>
+            <option>Ghotki</option>
+            <option>Sadiqabad</option>
+            <option>Rahim Yar Khan</option>
+            <option>Bahawalpur</option>
+            <option>Multan Cantt</option>
+            <option>Khanewal Junction</option>
+            <option>Sahiwal</option>
+            <option>Okara</option>
+            <option>Raiwind Junction</option>
+            <option>Lahore Junction</option>
+            <option>Lahore Cantt</option>
+            <option>Gujranwala</option>
+            <option>Wazirabad Junction</option>
+            <option>Gujrat</option>
+            <option>Lala Musa Junction</option>
+            <option>Jhelum</option>
+            <option>Rawalpindi</option>
+            <option>Islamabad</option>
+            <option>Taxila Cantt</option>
+            <option>Attock City</option>
+            <option>Peshawar Cantt</option>
+            <option>Quetta</option>
+            <option>Sibi Junction</option>
+            <option>Jacobabad Junction</option>
+            <option>Shikarpur</option>
+            <option>Dadu</option>
+            <option>Faisalabad</option>
+            <option>Sargodha Junction</option>
+            <option>Jhang Sadar</option>
+            <option>Bahawalnagar</option>
+            <option>Narowal Junction</option>
+            <option>Sialkot Junction</option>
+            <option>Havelian</option>
+          </select>
+
+        </div>
+
+
+        <div class="search-field">
+
+          <label for="journeyDate">
+            <i class="fa-solid fa-calendar-days"></i>
+            Journey Date
+          </label>
+
+          <input
+            type="date"
+            id="journeyDate"
+            class="search-input"
+          >
+
+        </div>
+
+
+        <button type="button" id="searchButton" class="btn-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search Train
+        </button>
+       
+
+      </div>
+    </div>
+  </section>
+
+ <div id="trainResult"></div>
+ 
+
+
+  <script src="app.js"></script>
+  <script src="theme-toggle.js"></script>
+
 </body>
 </html>

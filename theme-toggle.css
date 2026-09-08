@@ -1,0 +1,37 @@
+/* Light theme */
+body {
+  background-color: #f5f7fa;
+  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#themeToggleBtn {
+  background-color: transparent;
+  color: #212529;
+  border: 1px solid #212529;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#themeToggleBtn:hover {
+  background-color: #212529;
+  color: white;
+}
+
+/* Dark theme */
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+body.dark-mode #themeToggleBtn {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+body.dark-mode #themeToggleBtn:hover {
+  background-color: #f8f9fa;
+  color: #121212;
+}
